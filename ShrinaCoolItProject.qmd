@@ -1,0 +1,9 @@
+# Cool It Dataset
+
+```{r}
+df <- read.csv("data/Cool_It_Dataset.csv")
+head(df)
+nrow(df)
+ncol(df)
+```
+

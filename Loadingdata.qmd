@@ -1,0 +1,29 @@
+#SchoolSafetyReport
+```{r}
+library(tidyverse)
+df <- read_csv("data/schoolsafetyreport.csv")
+```
+
+```{r}
+ggplot(df, aes(x = `Borough Name`)) + 
+  geom_bar(color = "blue", fill = "blue") 
+```
+
+```{r}
+ggplot(df, aes(x = `Borough Name`, fill = factor(`# Schools`))) + 
+  geom_bar(position = "dodge")
+```
+
+
+```{r}
+ggplot(df, aes(fill = `Borough Name`, x = factor(`# Schools`))) + 
+  geom_bar(position = "dodge") 
+```
+
+
+
+```{r}
+ggplot(df, aes(x = `AvgOfVio N`, y = `AvgOfNoCrim N`)) + 
+  geom_point() +
+  geom_jitter()
+```

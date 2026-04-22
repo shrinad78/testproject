@@ -1,0 +1,39 @@
+project:
+  type: book
+
+book:
+  title: "Stat 3702 Project (testing only)"
+  author: "Joyce Robbins"
+  date: today
+  repo-url: https://github.com/jtr13/testproject
+  repo-branch: main
+  repo-actions: [source, edit, issue]
+  chapters:
+    - index.qmd
+    - Charlene.qmd
+    - Dany.Rmd
+    - Jade.qmd
+    - Loadingdata.qmd
+    - PennyHuang.qmd
+    - ShrinaCoolItProject.qmd
+  
+format:
+  html:
+    theme: [default, style/edav3.scss]
+    highlight-style: style/joyce.theme
+    callout-icon: false
+    
+knitr:
+  opts_chunk: 
+    fig.align: center
+    out.width: 70%
+    
+    
+execute:
+  echo: true
+  warning: false
+  message: false
+  error: true
+  cache: true
+
+editor: source
